@@ -25,7 +25,7 @@ class BoardGUI(object):
         
         for i in range(width):
             for j in range(height):
-                self.grid[i][j] = self.canvas.create_rectangle(i * PIXEL_WIDTH, \
+                self.grid[i][height - j - 1] = self.canvas.create_rectangle(i * PIXEL_WIDTH, \
                                                                j * PIXEL_WIDTH, \
                                                                (i + 1) * PIXEL_WIDTH, \
                                                                (j + 1) * PIXEL_WIDTH, \
