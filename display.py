@@ -44,7 +44,7 @@ class Display(object):
             return None
 
         for i in range(x, x + w, w/abs(w)):
-            for j in range(y, y + h - round((x - w) * h/w), h/abs(h)):
+            for j in range(y, y + h - int(round((i - x) * h/w)), h/abs(h)):
                 self.setValue(i, j, c)
 
     def clear(self):
